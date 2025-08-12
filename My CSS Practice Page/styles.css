@@ -1,0 +1,240 @@
+* {
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+header h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+header p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+/* Navigation */
+nav {
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 0.35rem 0.15rem;
+}
+
+nav ul li a {
+  color: #fefefe;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 0.15rem 0.3rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #2980b9;
+  color: #f3f3f3;
+  outline: none;
+}
+
+/* Section with top cards container */
+.top-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto 1.4rem auto;
+  max-width: 1100px;
+  padding: 0 1rem;
+}
+
+.card {
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.15);
+  user-select: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 120px;
+  font-size: 0.85rem;
+}
+  .card, section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+}
+
+.card img {
+  display: none;
+}
+
+.sidebar {
+    background: url(bg-image2.jpg) center / cover no-repeat;
+    height: 150px;
+    width: 300px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 40px;
+}
+
+.sidebar small {
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.main-content {
+  background: url('bg-image.jpg') no-repeat center center/cover;
+  font-size: 1.5rem;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  gap: 20px;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.main-content small {
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.35rem;
+  font-style: italic;
+}
+
+.extra-section {
+  background: url('bg-image3.jpg') no-repeat center center/cover;
+  height: 150px;
+  width: 300px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5em;
+  padding: 1rem 1.25rem 1.2rem 1.25rem;
+  padding: 40px;
+}
+
+.extra-section small {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+  margin-top: 0.4rem;
+}
+
+/* Content sections below top cards */
+main {
+  max-width: 1100px;
+  margin: 0 auto 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  padding: 0.9rem 1.25rem;
+  font-weight: 600;
+  color: #222;
+  user-select: none;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+}
+
+section p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 1rem;
+}
+/* Individual background colors and text colors for each section */
+#services {
+  background-color: #fff3e0;
+  color: #2e281d;
+  font-size: 1.5rem;
+}
+
+#portfolio {
+  background-color: #2c3e50;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+#contact {
+  background-color: #e6f2e6;
+  color: #121b12;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .top-cards {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+}
