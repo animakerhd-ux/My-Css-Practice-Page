@@ -22,7 +22,7 @@ a:focus {
 /* Header */
 header {
     background-color: #3498db;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 40px 20px;
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -38,6 +38,17 @@ header h1 {
     font-weight: bold;
     unicode-bidi: isolate;
 }
+    .slide-in {
+  transform: translateX(-100%);
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+
+}
 
 header p {
     display: block;
@@ -46,6 +57,23 @@ header p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+    font-size: 1.5rem;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  display: inline-block;
+  animation: bounce 2s ease infinite;
 }
 
 /* Navigation */
@@ -135,6 +163,7 @@ nav ul li a:focus {
   font-size: 1rem;
   display: block;
   margin-top: 0.8rem;
+  text-align: left;
 }
 
 .main-content {
@@ -146,14 +175,18 @@ nav ul li a:focus {
   gap: 20px;
   padding: 40px;
   border-radius: 5px;
+  height: 150px;
+  width: 600px;
 }
 
 .main-content small {
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   display: block;
   margin-top: 0.35rem;
   font-style: italic;
+  color: rgb(255, 255, 255); /* Fill color */
+  -webkit-text-stroke: 1px rgb(0, 0, 0); /* Stroke: 1px thick, black color */
 }
 
 .extra-section {
@@ -201,10 +234,22 @@ section p {
     unicode-bidi: isolate;
     font-size: 1rem;
 }
+.color-change-about {
+  animation: colorShift 5s infinite;
+  text-align: center;
+}
+
+/* Text color cycling animation */
+@keyframes colorShift {
+  0%   { color: #ff4c4c; }   /* red */
+  25%  { color: #ffa500; }   /* orange */
+  50%  { color: #32cd32; }   /* green */
+  75%  { color: #1e90ff; }   /* blue */
+  100% { color: #ff4c4c; }   /* back to red */
+}
 /* Individual background colors and text colors for each section */
 #services {
   background-color: #fff3e0;
-  color: #2e281d;
   font-size: 1.5rem;
 }
 
